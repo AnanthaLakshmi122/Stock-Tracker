@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="header">{{ symbol }}</h1>
+  <div class="details-content">
+    <div class="details-item" *ngFor="let value of values">
+      <div *ngIf="value; else noValue" class="details-item-info">
+        <span><b>{{ value.month | month }}</b></span> &nbsp;
+        <span><b>Change:</b> {{ value.change }}</span>&nbsp;
+        <span><b>MSPR:</b> {{ value.mspr }}</span>
+      </div>
+      <ng-template #noValue>
+        <div>No data</div>
+      </ng-template>
+      <div class="arrow-up" *ngIf="value.mspr > 0">&#8679;</div>
+      <div class="arrow-zero" *ngIf="value.mspr === 0">&#8691;</div>
+      <div class="arrow-down" *ngIf="value.mspr < 0">&#8681;</div>
+    </div>
+    <div *ngIf="!values || values.length === 0">
+      <h3>No data</h3>
+    </div>
+  </div>
+
+</div>
+<button class="back-btn" id="backBtn" (click)="onBack()">
+  &#8249; Back to list of stocks
+</button>

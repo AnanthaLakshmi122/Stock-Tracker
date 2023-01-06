@@ -1,0 +1,72 @@
+.header {
+  background: #c6c8cb;
+  margin: -10px -10px 25px -10px;
+  padding-left: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+h2 {
+  display: contents;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px auto 1px auto;
+  box-shadow: 1px 4px 4px 0px #ccc;
+  padding: 10px;
+  width: 50%;
+  background: #fff;
+  border-radius: 5px;
+  // border-top-left-radius: 5px;
+}
+.clear {
+  cursor: pointer;
+  font-size: 34px;
+  display: inline;
+  float: right;
+  margin-top: -5px;
+  margin-right: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 15px;
+  width: 600px;
+}
+
+.details {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.arrow-down {
+  font-size: 50px;
+  color: red;
+  margin-top: 10px;
+  margin-left: 215px;
+}
+
+.arrow-up {
+  font-size: 50px;
+  color: green;
+  margin-top: 10px;
+  margin-left: 215px;
+}
+
+.arrow-zero {
+  font-size: 50px;
+  color: grey;
+  margin-top: 15px;
+  margin-left: 215px;
+}
+
+.stockvalue-btn {
+  width: 35%;
+  color: black;
+  background-color: gold;
+  border-radius: 10px;
+ }
