@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
-import { StockQuote } from 'src/app/model/stock.model';
+import { StockQuote } from '../../../../model/stock.model';
 
 @Component({
   selector: 'app-stockvalue',

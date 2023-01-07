@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { HistoryDetail } from 'src/app/model/details.model';
-import { StockQuoteService } from 'src/app/service/stock.service';
+import { HistoryDetail } from '../../model/details.model';
+import { StockQuoteService } from '../../service/stock.service';
 
 @Component({
   selector: 'app-sentiment',
@@ -25,7 +25,7 @@ export class SentimentComponent  implements OnInit {
       }
     });
   }
-  
+
   onBack() {
     this.router.navigateByUrl('/');
   }

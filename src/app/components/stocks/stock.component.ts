@@ -1,7 +1,7 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { forkJoin } from 'rxjs';
-import { StockQuote } from 'src/app/model/stock.model';
-import { StockQuoteService } from 'src/app/service/stock.service';
+import { StockQuote } from '../../model/stock.model';
+import { StockQuoteService } from '../../service/stock.service';
 
 @Component({
   selector: 'app-stock',
